@@ -31,5 +31,8 @@ namespace AutomatedTellerMachine.Models
         [Required]
         [DataType(DataType.Currency)]
         public decimal Balance { get; set; }
+
+        public virtual ApplicationUser ApplicationUser { get; set; }
+        public string ApplicationUserId { get; set; }
     }
 }
